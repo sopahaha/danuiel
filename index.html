@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      button {
+        margin-top: 200px;
+        padding: 20px;
+        font-size: large;
+        width: 100%;
+      }
+
+      body {
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+      }
+
+      p {
+        position: absolute;
+        top: 250px;
+        left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100px;
+        opacity: 0;
+      }
+
+      .danuel {
+        padding: 20px;
+        width: 100%;
+        margin-bottom: -1000px;
+      }
+
+      .ani2 {
+        animation: vem 1s both;
+      }
+      .ani {
+        animation: ape 3s 1s both;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        opacity: 0;
+      }
+
+      @keyframes ape {
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes vem {
+        100% {
+          margin-bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img class="danuel" src="Screenshot_20201104-130156_YouTube.jpg" alt="" />
+    <button>danuel</button>
+    <h1>parabens!😎👌</h1>
+    <img
+      style="margin-left: 100px"
+      width="200px"
+      src="https://media1.tenor.com/images/d41a2ed525cc5207b0361e6c61cb86c7/tenor.gif?itemid=17854966"
+      alt=""
+    />
+
+    <p>mesmo fazendo tempo, tamo junto👍    </p>
+  </body>
+  <script>
+    document.querySelector("button").addEventListener("click", () => {
+      document.querySelector("img").classList.add("ani2");
+      document.querySelector("h1").classList.add("ani");
+      document.querySelector("p").classList.add("ani");
+    });
+  </script>
+</html>
